@@ -1,0 +1,120 @@
+.features{
+    display: flex;
+    justify-content: center;
+}
+
+.features__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1144px;
+    justify-content: space-between;
+}
+.features__contentText{
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   margin-top: 50px;
+
+}
+.features__text{
+    max-width: 225px;
+    font-weight: 700;
+    font-size: calc(3px + 1vw);
+    color: #807F81;
+}
+
+.features__title{
+    max-width: 462px;
+    font-weight: 700;
+    font-size: calc(36.8px + 1vw);
+}
+
+.features__description{
+    width: 461px;
+    font-weight: 400;
+    font-size: calc(4.8px + 1vw);
+}
+
+.features__contentImage{
+    max-width: 425px;
+    max-height: 421px;
+    margin-right: 64px;
+    margin-bottom: 207px;
+}
+
+@media (max-width:1024px) {
+    .features {
+        max-width: 1024px;
+    }
+    .features__content{
+        max-width: 900px;    
+    }
+    .features__contentImage{
+        max-width: 310px;
+        max-height: 300px;
+        margin-top:50px ;
+    }
+
+}
+
+@media (max-width:820px) {
+    .features {
+        max-width: 820px;
+        margin-top: 83px;
+    }
+    .features__content{
+        max-width: 655px;        
+    }
+    .features__contentImage{
+        max-width: 243px;
+        max-height: 241px;
+        margin-right: 24px;
+        margin-bottom: 207px;
+    }
+    .button{
+        width: 92px;
+        height: 27px;
+    }
+    }
+
+    @media (max-width:700px) {
+        .features {
+            max-width: 700px;
+            margin-top: 60px;
+            height: 350px;
+        }
+        .features__content{
+            max-width: 600px;   
+            justify-content: center;     
+        }
+        .features__contentImage{
+            display: none;
+        }
+        .button{
+            width: 80px;
+            height:20px;
+        }
+        }
+    
+    @media (max-width:450px) {
+        .features {
+            width: 450px;
+            margin-top: 13px;
+            height: 250px;
+        }
+        .features__content{
+            width: 347px;
+            height: 200px;            
+        }
+        .features__title{
+            font-size: 24px;
+            width: 250px;
+        }
+        .features__description{
+            width: 130px;
+        }
+        .button{
+            width: 48.8px;
+            height: 14.3px;
+        }
+        }
